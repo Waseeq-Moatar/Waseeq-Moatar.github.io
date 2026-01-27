@@ -1,19 +1,1 @@
 # Waseeq-Moatar.github.io
-<html>
-<head>
-        <tiltle>INFT1206-</html>
-        <!--
-            Name:Waseeq Moatar
-            file: index.html
-            Date: 16 January 2026
-            IFNT1206 website homepage.
-        -->
-</head>
-<body>
-<h1>first heading</h1>
-<h3>third heading</h3>
-<P>FIRST PARAGRAPH</P>
-<p>this is my second                      paragrpah, it is <u>special</u>.</p>
-
-</body>
-</html>
