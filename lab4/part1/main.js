@@ -5,7 +5,7 @@ File: filename.html"
 Date: 27 March 2026"
 generates absurd story.
 */
-alert("in file    ");
+//alert("in file");
   
 // Complete variable definitions and random functions
 
@@ -25,14 +25,17 @@ const characters = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
  const places = ["the soup kitchen", "Disneyland", "the White House"];
 
 const events = [
- "spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and slithered away",
+ "spontaneously combusted",
+ "melted into a puddle on the sidewalk",
+ "turned into a slug and slithered away"
  ];
 
 // partial return random string function
+
+function returnRandomStoryString() {
 let randomCharacter = randomValueFromArray(characters);
 let randomPlace = randomValueFromArray(places);
 let randomEvent = randomValueFromArray(events);
-function returnRandomStoryString() {
 let storyText = `It was 94 Fahrenheit outside, 
 so ${randomCharacter} went for a walk. When they got to ${randomPlace},
  they stared in horror for a few moments, then ${randomEvent}. 
@@ -47,7 +50,6 @@ generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
   let newStory = returnRandomStoryString();
-
   if (customName.value !== "") {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
@@ -61,6 +63,6 @@ function generateStory() {
   }
 
   // TODO: replace "" with the correct expression
-  story.textContent = "newStory";
+  story.textContent = newStory;
   story.style.visibility = "visible";
 }
