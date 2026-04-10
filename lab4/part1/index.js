@@ -49,15 +49,16 @@ so ${randomCharacter} went for a walk. When they got to ${randomPlace},
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
-  letnewStory = returnRandomStoryString();
+  let newStory = returnRandomStoryString();
 
   if (customName.value !== "") {
     const name = customName.value;
+    newStory = newstory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = `${Math.round(300/14)} stone`;
+    const temperature =`${Math.round(94-32) * (5/9)} Celsius`;
   }
 
   // TODO: replace "" with the correct expression
