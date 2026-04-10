@@ -19,6 +19,8 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
+// text string
+
 const characters = ["Willy the Goblin", "Big Daddy",
  "Father Christmas"];
 
@@ -31,11 +33,11 @@ const events = [
  "turned into a slug and slithered away",
  ];
 
- Partial return random string function
+// partial return random string function
 
 function returnRandomStoryString() {
 let storyText = `It was 94 Fahrenheit outside, 
-so ${randomCharacter} went for a walk. When they got to :inserty:,
+so ${randomCharacter} went for a walk. When they got to ${randomPlace},
  they stared in horror for a few moments, then ${randomEvent}. 
  Bob saw the whole thing, but was not surprised — ${randomCharacter} weighs 300 pounds, and it was a hot day.`;
 
@@ -47,6 +49,8 @@ so ${randomCharacter} went for a walk. When they got to :inserty:,
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+  letnewStory = returnRandomStoryString();
+
   if (customName.value !== "") {
     const name = customName.value;
   }
