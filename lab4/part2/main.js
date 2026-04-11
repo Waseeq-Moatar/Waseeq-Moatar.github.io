@@ -27,8 +27,8 @@ for (const images of images) {
     newImage.alt = images.alt;
     newImage.tabIndex = "0";
     thumbBar.appendChild(newImage);
-    newImage.addEventListner("click", updateDisplayedImage);
-    newImage.addEventListner("keydown", (e) => {
+    newImage.addEventListener("click", updateDisplayedImage);
+    newImage.addEventListener("keydown", (e) => {
         if (e.code === "Enter"){
             updateDisplayedImage(e);}
   });
@@ -38,7 +38,7 @@ function updateDisplayedImage(e){
     displayedImage.alt = e.target.alt;
         
 }
-    btn.addEventListner("click", () => {
+    btn.addEventListener("click", () => {
         if (btn.classList.contains ("dark")) {
             btn.textContent = "Lighten";
         overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
