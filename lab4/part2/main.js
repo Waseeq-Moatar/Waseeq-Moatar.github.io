@@ -22,7 +22,7 @@ const images = [
 const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 
 for (const images of images) {
-    newImage = document.createElement("img");
+    const newImage = document.createElement("img");
     newImage.src = `${baseURL}${images.filename}`;
     newImage.alt = images.alt;
     newImage.tabIndex = "0";
