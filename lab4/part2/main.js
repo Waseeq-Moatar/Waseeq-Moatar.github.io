@@ -23,8 +23,8 @@ const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/galle
 
 for (const image of images) {
     const newImage = document.createElement("img");
-    newImage.src = `${baseURL}${images.filename}`;
-    newImage.alt = images.alt;
+    newImage.src = `${baseURL}${image.filename}`;
+    newImage.alt = image.alt;
     newImage.tabIndex = "0";
     thumbBar.appendChild(newImage);
     newImage.addEventListener("click", updateDisplayedImage);
