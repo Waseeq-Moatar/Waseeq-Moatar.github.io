@@ -32,7 +32,7 @@ for (const images of images) {
         if (e.code === "Enter"){
             updateDisplayedImage(e);}
   });
-
+}
 function updateDisplayedImage(e){
     displayedImage.src = e.target.src;
     displayedImage.alt = e.target.alt;
@@ -48,4 +48,4 @@ function updateDisplayedImage(e){
             btn.classList.toggle("dark");
     });
 
-}
+
