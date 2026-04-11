@@ -26,8 +26,25 @@ for (const images of images) {
     newImage.alt = images.alt;
     newImage.tabIndex = "0";
     thumbBar.appendChild(newImage);
+    newImage.addEventListner("click", updateDisplayedImage);
+    newImage.addEventListner("keydown", (e) => {
+        if (e.code === "Enter"){
+            updateDisplayedImage(e);}
+  });
 
-
-
+function updateDisplayedImage(e){
+    displayedImage.src= e.target.src;
+    displayedImage.alt = e.target.alt;
+        
+}
+    btn.addEventListner("click", () => {
+        if (btn.classList.contains ("dark")) {
+            btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+        } else {
+            btn.textContent = "Darken";
+            overlay.style.backgroundColor = "rgb(0 0 0/ 0)";}
+            btn.classList.toggle("dark");
+    });
 
 }
