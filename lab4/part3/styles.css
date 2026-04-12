@@ -11,7 +11,7 @@ body {
   overflow: hidden;
   height: inherit;
 }
-
+canvas{
 h1 {
   z-index: 2;
   font-size: 2rem;
@@ -23,4 +23,5 @@ h1 {
 
   color: transparent;
   text-shadow: 0 0 4px white;
+}
 }
