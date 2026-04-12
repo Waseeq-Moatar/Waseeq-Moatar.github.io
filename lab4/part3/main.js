@@ -35,12 +35,45 @@ class Ball {
        
     }
 
- }
+update() {
+    if (this.x + this.size >= width) {
+      this.velX = -this.velX;
+    }
 
-const testBall = new Ball(50, 100, 4, 4, "blue", 10); 
+    if (this.x - this.size <= 0) {
+      this.velX = -this.velX;
+    }
 
-testBall.x;
-testBall.size;
-testBall.color;
-testBall.draw();
+    if (this.y + this.size >= height) {
+      this.velY = -this.velY;
+    }
+
+    if (this.y - this.size <= 0) {
+      this.velY = -this.velY;
+    }
+
+    this.x += this.velX;
+    this.y += this.velY;
+  }
+}
+
+const balls = [];
+
+while (balls.length < 25) {
+  const size = random(10, 20);
+  const ball = new Ball(
+    // ball position always drawn at least one ball width
+    // away from the edge of the canvas, to avoid drawing errors
+    random(0 + size, width - size),
+    random(0 + size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    randomRGB(),
+    size,
+  );
+
+  balls.push(ball);
+}
+ 
+
 
