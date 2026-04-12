@@ -24,6 +24,7 @@ h1 {
   width: 640px;
   height: 480px;
   pointer-events: none;
+  z-index: 1;
 }
 
 button {
@@ -33,6 +34,7 @@ button {
   cursor: pointer;
   top: 2px;
   left: 2px;
+  z-index: 2;
 }
 
 button:hover,
