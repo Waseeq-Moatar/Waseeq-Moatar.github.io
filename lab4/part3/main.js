@@ -4,6 +4,7 @@ File: filename.html"
 Date: 27 March 2026"
 allowes urser to input info.*/
 const logoImg = new Image();
+logoImg.scr= 'styles.css';
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
