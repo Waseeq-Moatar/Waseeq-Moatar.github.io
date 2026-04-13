@@ -128,6 +128,8 @@ if ((this.x + this.size) >= width) {
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          count--;
+          para.textContent = 'Ball count: ' + count;
         }
       }
     }
