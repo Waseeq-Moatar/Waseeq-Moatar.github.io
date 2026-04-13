@@ -16,8 +16,8 @@
     if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
     to win prizes.
     </p>
-    --
-
+<form>
+<div class="form-section"></div>
    <h2>Facilities</h2>
    <fieldset>
     <legend>Was the porridge</legend>
@@ -44,7 +44,7 @@
     type="radio"
     id ="beds-1"
     name="beds"
-    value="hard" checked><label for="beds-1" name ="beds" value="soft"></label>
+    value="hard" checked><label for="beds-1">Too hard?</label>
     <input type="radio" id="beds-2" name="beds" value="soft" >
     <label for="beds-2">Too soft?</label>
 
@@ -62,8 +62,8 @@
     <label>for="comfy">Comfy</label>
     <input type="checkbox" id="luxurious" name="luxurious">
     <label for="luxurious">Luxurious</label>
-    <input type="checkbox" id="hi tech" name="hi tech">
-    <label for="hi tech">Hi tec</label>
+    <input type="checkbox" id="hi tec" name="hi tec">
+    <label for="hi tec">Hi tec</label>
     <input type="checkbox" id="pretty" name="pretty">
     <label for="pretty">Pretty</label>
     input type="checkbox" id="majestic" name="majestic">
@@ -72,7 +72,7 @@
     
 
     </fieldset>
-</div>
+
 
 <div class="form-section">
     <h2>About your hosts</h2>
@@ -86,11 +86,12 @@
 </div>
 
 <div class="seperator">
-   <label for="greeting">Which greeting did you prefer?</label> 
-    <option value="papa">Wave</option>
-    <option value="mama">Friendly greeting</option>
-    <option value="junior">Growl</option>
-    <option value="randy">Claw marks in the door</option>
+   <label for="greeting"> Which greeting did you prefer?</label> 
+   <select name="greeting" id="greeting">
+    <option value="papa"> Wave </option>
+    <option value="mama"> Friendly greeting </option>
+    <option value="junior"> Growl </option>
+    <option value="randy"> Claw marks in the door </option>
     </select>
  </div>
 </div>
@@ -114,14 +115,14 @@
     
 <div class ="seporator">
     <label for="phone">Phone</label>
-    <input type ="phone" id="phone" name="email">
+    <input type ="phone" id="phone" name="phone">
 </div>
 
 
 <div class="form-section">
-<button>Submit</button>
+    <button>Submit</button>
 
-    </div>
-   </form>
- </body>
+</div>
+</form>
+</body>
 </html>
