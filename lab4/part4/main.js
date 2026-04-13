@@ -1,7 +1,8 @@
-// Thanks to Renan Martineli for this version of the demo
 
-// setup canvas
-
+/*Name: Waseeq Moatar
+File: filename.html"
+Date: 27 March 2026"
+User can eat balls.*/
 const para = document.querySelector('p');
 let count = 0;
 
@@ -18,7 +19,7 @@ function random(min,max) {
   return num;
 };
 
-// function to generate random RGB color value
+
 
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
@@ -160,7 +161,7 @@ class EvilCircle extends Shape {
 
 }
 
-// define array to store balls and populate it
+
 
 const balls = [];
 
