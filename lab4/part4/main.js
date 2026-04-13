@@ -61,16 +61,17 @@ update() {
 
     if (this.y - this.size <= 0) {
       this.velY = -this.velY;
+    }
     
     this.x += this.velX;
     this.y += this.velY;
     }
   }
-}
+
 
   class EvilCircle extends Shape{
     constructor(x,y) {
-        super(x, y, Shape, 20, 20)
+        super(x, y, 20, 20)
         this.color = "white";
         this.size = 10;
 
@@ -125,9 +126,8 @@ if ((this.x + this.size) >= width) {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-
         if (distance < this.size + ball.size) {
-          ball.color = this.color = randomRGB();
+          ball.exists = false;
         }
       }
     }
