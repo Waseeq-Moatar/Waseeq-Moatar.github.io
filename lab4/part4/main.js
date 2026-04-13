@@ -73,30 +73,30 @@ update() {
   }
 
 
-  class EvilCircle extends Shape{
+  class EvilCircle extends Shape {
     constructor(x,y) {
         super(x, y, 20, 20)
         this.color = "white";
         this.size = 10;
 
 
-window.addEventListener('keydown', (e) => {
-    switch(e.key) {
-        case 'a':
-          this.x -= this.velX;
-          break;
-        case 'd':
-          this.x += this.velX;
-          break;
-        case 'w':
-          this.y -= this.velY;
-          break;
-        case 's':
-          this.y += this.velY;
-          break;
-      }
-    });
-  }
+window.addEventListener("keydown", (e) => {
+    switch (e.key) {
+      case "a":
+        this.x -= this.velX; // Move Left
+        break;
+      case "d":
+        this.x += this.velX; // Move Right
+        break;
+      case "w":
+        this.y -= this.velY; // Move Up
+        break;
+      case "s":
+        this.y += this.velY; // Move Down
+        break;
+    }
+  });
+}
 
 draw() {
     ctx.beginPath();
