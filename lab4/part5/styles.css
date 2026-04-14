@@ -1,8 +1,3 @@
-h1, h2 {
-  margin: 0 0 20px !important;
-  color: purple !important;
-}
-
 form {
   background: url("https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg")
     no-repeat;
@@ -28,7 +23,10 @@ h2 {
   font-size: 1.6rem;
 }
 
-
+h1, h2 {
+  margin: 0 0 20px !important;
+  color: purple !important;
+}
 
 * {
   box-sizing: border-box;
