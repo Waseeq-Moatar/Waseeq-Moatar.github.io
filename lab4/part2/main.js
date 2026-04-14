@@ -1,6 +1,6 @@
 
 /*Name: Waseeq Moatar
-File: filename.html"
+File: main.js"
 Date: 27 March 2026"
 allowes urser to input info.*/
 

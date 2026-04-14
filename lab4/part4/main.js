@@ -1,6 +1,6 @@
 
 /*Name: Waseeq Moatar
-File: filename.html"
+File: main.js"
 Date: 27 March 2026"
 User can eat balls.*/
 const para = document.querySelector('p');
@@ -12,7 +12,7 @@ const ctx = canvas.getContext('2d');
 const width = canvas.width = window.innerWidth;
 const height = canvas.height = window.innerHeight;
 
-// function to generate random number
+
 
 function random(min,max) {
   const num = Math.floor(Math.random()*(max-min)) + min;
