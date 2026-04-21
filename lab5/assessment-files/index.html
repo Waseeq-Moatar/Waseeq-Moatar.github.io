@@ -102,9 +102,11 @@
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
         </audio>
-        <P>
-           bear-transcipt.htmlRead transcipt of the audio</a>
-          </P>
+        <button onclick="showTranscript()">show transcript</button>
+        <script> function showTranscript(){
+          document.getElementById('transcript').hidden = false;
+        }
+        </script>
 
         <aside>
 
