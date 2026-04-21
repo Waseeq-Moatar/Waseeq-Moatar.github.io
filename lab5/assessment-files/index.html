@@ -106,8 +106,8 @@
        
        <p id="transcript" style="display: none;">This is not a real audio file about bears.</p>
         <script> function showTranscript(){
-        var x = document.getElementById('transcript').style.display = "block";
-        x.style.display = (x.style.display ==="none") ? "block": "none";
+        document.getElementById('transcript').style.display = "block";
+        (document.getElementById('transcript').style.display === "none") ? "block" : "none";
         }
         </script>   
           
