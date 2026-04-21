@@ -103,12 +103,15 @@
           <source src="media/bear.ogg" type="audio/ogg">
         </audio>
         <button onclick="showTranscript()">show transcript</button>
+       
+       <p id="transcript" style="display: none;">This is not a real audio file about bears.</p>
         <script> function showTranscript(){
-          document.getElementById('transcript').hidden = false;
+        var x = document.getElementById('transcript').style.display = "block";
+        x.style.display = (x.style.display ==="none") ? "block": "none";
         }
+        </script>   
           
-          
-        </script>
+        
 
         <aside>
 
