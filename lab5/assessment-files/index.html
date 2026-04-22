@@ -107,7 +107,6 @@ A very brief description of the file.
         <p>
         The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
         </p>
-        <p>
         <audio controls>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
@@ -116,10 +115,11 @@ A very brief description of the file.
         </audio>
         <button onclick="showTranscript()">show transcript</button>
        
-       <p id="transcript" style="display: none;">This is not a real audio file about bears.</p>
+       <p id="transcript" style="display: none;">This is not a real audio file about bears, but it is an audio file that you can transcribe.</p>
         <script> function showTranscript(){
         document.getElementById('transcript').style.display = "block";
-        }
+        <button>Show transcript</button>
+      }
         </script>   
           
         
