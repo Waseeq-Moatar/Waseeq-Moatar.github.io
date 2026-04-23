@@ -95,7 +95,10 @@ nav a {
  
 }
 
-
+input:focus-visible {
+  outline: 3px solid #005a9c;
+  outline-offset: 2px;
+}
 
 nav .search {
   flex: 1;
