@@ -134,8 +134,9 @@ A very brief description of the file.
 
         </aside>
         <section class="comments">
-          <div class="show-hide" tabindex="0" role="button">Show comments</div>
-
+          <!--<div class="show-hide" tabindex="0" role="button">Show comments</div>-->
+          <button class="show-hide" aria-expanded="false"> Show comments </button>
+          
           <div class="comment-wrapper">
 
             <h1>Add comment</h1>
@@ -143,14 +144,14 @@ A very brief description of the file.
             <form class="comment-form">
               <div class="flex-pair">
                 Your name:
-                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="enter name">
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="enter your name here">
               </div>
               <div class="flex-pair">
                 Your comment:
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="enter comment">
+                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="enter comment here">
               </div>
               <div>
-                <input type="submit" value="Submit comment" aria-label="submit comment">
+                <input type="submit" value="Submit comment">
               </div>
             </form>
 
